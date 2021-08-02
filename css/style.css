@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #090b1a;
+  /* margin: 88px 24px; */
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #1b1938;
+  border-radius: 10px;
+}
+
+header .overlay {
+  background: #aa5cdb;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+  max-width: 654px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: block;
+  opacity: 80%;
+  mix-blend-mode: multiply;
+}
+
+main {
+  padding: 25px 35px;
+}
+
+main h1 {
+  color: white;
+  font-weight: 700;
+}
+
+main .main-text {
+  color: rgba(255, 255, 255, 0.75);
+  padding: 25px 0 50px;
+  line-height: 1.5rem;
+}
+
+main .ins {
+  color: #aa5cdb;
+}
+
+.stats p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 35px;
+  text-transform: uppercase;
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 10px;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+
+.stats span {
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.attribution {
+  font-size: 11px;
+  position: absolute;
+  bottom: 5px;
+  color: #3e52a3;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+
+@media (min-width: 600px) {
+  .container {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .container {
+    max-width: 1100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .stats {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-right: 50px;
+  }
+  .stats p {
+    margin-bottom: 0;
+  }
+  main {
+    margin: auto 70px;
+    padding: 0;
+    width: 50%;
+    text-align: left;
+  }
+  main .main-text {
+    padding-bottom: 70px;
+  }
+  header img, header .overlay {
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 10px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

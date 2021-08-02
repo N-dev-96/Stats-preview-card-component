@@ -1,0 +1,23 @@
+@import "variables";
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+background-color: $verydarkblue;
+/* margin: 88px 24px; */
+text-align: center;
+font-family: 'Inter', sans-serif;
+font-size: 15px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+.container {
+    background: $card-bg;
+    border-radius: 10px;
+}

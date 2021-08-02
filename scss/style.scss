@@ -1,0 +1,106 @@
+@import "global";
+@import "variables";
+
+
+header {
+.overlay {
+    background: $violet;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+    img { 
+        width: 100%;
+        height: auto;
+        max-width: 654px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        display: block;
+        opacity: 80%;
+        mix-blend-mode: multiply;
+    }
+   
+}
+main {
+    padding: 25px 35px;
+   h1 {
+    color: $heading;
+    font-weight: 700;
+}
+.main-text {
+    color: $text;
+    padding: 25px 0 50px;
+    line-height: 1.5rem;
+}
+.ins {
+    color: $violet;
+}
+   }
+.stats {
+    p {
+        color: $stat-heading;
+        margin-bottom: 35px;
+        text-transform: uppercase;
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 10px;
+        line-height: 2rem;
+        letter-spacing: 1px;
+    }
+    span {
+        color: $heading;
+        font-weight: 700;
+        font-size: 20px;
+        }
+    }
+         
+
+.attribution { 
+    font-size: 11px; 
+position: absolute;
+bottom: 5px;
+
+    color: hsl(228, 45%, 44%);
+     a { 
+         color: hsl(228, 45%, 44%); }
+     }
+
+
+
+     //Media querries
+     @media (min-width: 600px) {
+        .container {
+          max-width: 500px;
+          margin: auto;
+        }
+      }
+    @media (min-width: 1100px) {
+        .container {
+            max-width: 1100px;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            margin-right: 50px;
+            p {
+                margin-bottom: 0;
+            }
+
+        }
+        main {
+            margin: auto 70px;
+            padding: 0;
+            width: 50%;
+            text-align: left;
+            .main-text {
+                padding-bottom: 70px;
+            }
+        }
+        header {
+            img, .overlay {
+                border-top-left-radius: 0px;
+                border-bottom-right-radius: 10px; 
+            }
+
+        }
+    }
